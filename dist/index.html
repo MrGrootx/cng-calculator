@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CNG Calculator MrGroot</title>
+    
+    <link rel="stylesheet" href="/cng-calculator/assets/index-74c74594.css">
+  </head>
+  <body class="bg-dark">
+    <div class="sm:bg-white bg-gray-900 p-10 max-w-lg mx-auto mt-10 rounded shadow-xl">
+      <div class="">
+        <h1 class="font-bold text-red-500">CNG Cost Calculator</h1>
+        <!-- <p class="text-gray-600">simple tool to calculate the cost</p> -->
+      </div>
+
+      <form class="mt-5 space-y-4  ">
+        
+        <!-- 1 -->
+        <div>
+          
+          <label for="trip_distance" class="font-semibold text-sm text-white sm:text-black "
+            >Trip Distance <span class="text-red-600">*</span></label
+          >
+          <input
+            type="number"
+            placeholder="Trip Distance"
+            class="form-input"
+            id="trip_distance"
+            required
+          />
+        </div>
+        
+         <!-- 2 -->
+        <div>
+          <label for="fuel_efficiency" class="font-semibold text-sm text-white sm:text-black"
+            >Fuel Efficiency <span class="text-red-600">*</span></label
+          >
+          <input
+            id="fuel_efficiency"
+            type="number"
+            placeholder="Fuel Efficiency"
+            value="24"
+            class="form-input"
+            required
+          />
+
+         
+          
+        </div>
+
+        <!-- 3 -->
+        <div>
+          <label for="fuel_cost" class="font-semibold text-sm text-white sm:text-black"
+            >Fuel Cost <span class="text-red-600">*</span></label
+          >
+          <input
+            id="fuel_cost"
+            type="number"
+            placeholder="Fuel cost"
+            value="84"
+            class="form-input"
+            required
+          />
+        </div>
+
+        <div>
+          <button class="bg-red-500 px-4 py-2 rounded w-full hover:bg-red-700">Calculate</button>
+        </div>
+
+      </form>
+    </div>
+  </body>
+</html>
