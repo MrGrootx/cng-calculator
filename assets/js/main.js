@@ -1,9 +1,29 @@
-const firstName =  prompt("What is Your Name")
+const distanceKMEL = document.getElementById("trip_distance");
+const fullefficiencyEL = document.getElementById("fuel_efficiency");
+const fuelCostEL = document.getElementById("fuel_cost");
+const calculatebtnEL = document.getElementById("calculatebtn");
 
-const username = document.getElementById("username")
+calculatebtnEL.addEventListener("click", () => {
 
+    event.preventDefault()
 
+    if(distanceKMEL.value == 0) {
+        alert('Enter The Distance ')
+    } else {
+        const distanceKM = distanceKMEL.value;
+        const fullefficiency = fullefficiencyEL.value;
+        const fuelCost = fuelCostEL.value;
 
-username.innerText = firstName
+        const result = (distanceKM / fullefficiency) * fuelCost;
 
-console.log(username.innerText);
+        console.log(result);
+
+        const msg = "Your fuel cost will be  around: ₹" + result
+        alert(msg)
+    }
+
+ 
+ 
+
+  
+});
